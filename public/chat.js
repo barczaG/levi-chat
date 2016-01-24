@@ -24,7 +24,11 @@ window.onload = function () {
   })
 
   socket.on('alert', function (data) {
-    alert('Már legalább 10 perce vagy az oldalon!')
+    alert('Már legalább 1 perce vagy az oldalon!')
+  })
+  
+  socket.on('alert2', function (data) {
+    alert('Már legalább 5 perce vagy az oldalon!')
   })
 
   sendMessage = sendButton.onclick = function () {
@@ -44,4 +48,3 @@ $(document).ready(function () {
     }
   })
 })
-
