@@ -25,6 +25,14 @@ io.sockets.on('connection', function (socket) {
 
   setTimeout(function () {
     socket.emit('alert')
-  }, 10 * 1000)
+  }, 60 * 1000)
+  
+  setTimeout(function () {
+    socket.emit('alert2')
+  }, 300 * 1000)
+  
+  setTimeout(function () {
+    socket.emit('alert2')
+  }, 600 * 1000)
 })
 console.log('Listening on port ' + port)
